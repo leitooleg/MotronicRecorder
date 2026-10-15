@@ -58,7 +58,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Standalone dependency restore failed.' }
     & $DotNetPath publish $project --no-restore --configuration Release --runtime win-x64 --self-contained true --output $outputDirectory
     if ($LASTEXITCODE -ne 0) { throw 'Standalone publication failed.' }
-    $executable = Join-Path $outputDirectory 'MotronicRecorder-0.2.4-Standalone-x64.exe'
+    $executable = Join-Path $outputDirectory 'MotronicRecorder-0.2.5-Standalone-x64.exe'
     if (!(Test-Path -LiteralPath $executable)) { throw 'Published standalone EXE is missing.' }
     Get-FileHash -LiteralPath $executable -Algorithm SHA256 | Format-List
     if ($RunTests) {
