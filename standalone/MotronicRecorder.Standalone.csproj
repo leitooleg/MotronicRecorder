@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <StartupObject>MotronicRecorder.Program</StartupObject>
+    <AssemblyName>MotronicRecorder-0.2.4-Standalone-x64</AssemblyName>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../src/*.cs" />
+    <Compile Include="PlatformSupport.cs" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+    <EmbeddedResource Include="LICENSE.NET.txt" />
+    <EmbeddedResource Include="THIRD_PARTY_NOTICES.NET.txt" />
+    <EmbeddedResource Include="../ПОДКЛЮЧЕНИЕ.txt" LogicalName="MotronicRecorder.ConnectionGuide.txt" />
+  </ItemGroup>
+</Project>

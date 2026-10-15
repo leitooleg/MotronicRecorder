@@ -443,3 +443,11 @@ standalone/publish-log.txt
 .vs/
 *.user
 *.suo
+
+# Motronic Recorder: generated builds and local sessions
+standalone-out/
+build-toolchains/
+captures/
+Recordings/
+standalone/qa/
+standalone/publish-log.txt
