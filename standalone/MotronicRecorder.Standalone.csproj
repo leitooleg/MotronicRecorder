@@ -8,7 +8,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <StartupObject>MotronicRecorder.Program</StartupObject>
-    <AssemblyName>MotronicRecorder-0.2.4-Standalone-x64</AssemblyName>
+    <AssemblyName>MotronicRecorder-0.2.5-Standalone-x64</AssemblyName>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>true</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
