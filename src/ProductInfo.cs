@@ -6,11 +6,15 @@ namespace MotronicRecorder
 {
     internal static class ProductInfo
     {
-        public const string Version = "0.2.4";
+        public const string Version = "0.2.5";
         public const string Name = "Motronic Recorder by leitoauto.com";
         public const string Website = "https://leitoauto.com";
         public const string AuthorName = "Автор: Рябцев Олег.";
         public const string Author = "Программа создана энтузиастом-специалистом по компьютерным сетям.";
+        public const string Credits =
+            "При разработке Motronic Recorder использовалась программа MOTRONIC DIAGNOST v 1.21 авторов Doc & Scorpion (© 2003) " +
+            "как источник сведений о диагностическом обмене и интерпретации параметров Bosch Motronic M1.5. " +
+            "Спасибо Doc & Scorpion за их работу.";
         public const string Disclaimer =
             "Программа предоставляется «как есть» (AS IS), без каких-либо явных или подразумеваемых гарантий, " +
             "включая гарантии работоспособности, безопасности и пригодности для конкретной цели.\r\n\r\n" +
@@ -24,7 +28,8 @@ namespace MotronicRecorder
 
         public static string AboutText
         {
-            get { return AuthorName + "\r\n\r\n" + Author + "\r\n\r\nПроверено на Opel Vectra A, ECU Bosch Motronic 1.5.\r\n\r\n" + Disclaimer; }
+            get { return AuthorName + "\r\n\r\n" + Author + "\r\n\r\nПроверено на Opel Vectra A, ECU Bosch Motronic 1.5.\r\n\r\n" + Disclaimer +
+                "\r\n\r\nБлагодарности\r\n\r\n" + Credits + "\r\n\r\nСайт исходной программы: doc-scorpion.narod.ru."; }
         }
 
         public static string ConnectionGuide()
