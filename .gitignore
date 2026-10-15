@@ -426,3 +426,20 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# Результаты сборки
+[Bb]in/
+[Oo]bj/
+standalone-out/
+build-toolchains/
+
+# Локальные записи и отчёты
+captures/
+Recordings/
+standalone/qa/
+standalone/publish-log.txt
+
+# Настройки среды разработки
+.vs/
+*.user
+*.suo
