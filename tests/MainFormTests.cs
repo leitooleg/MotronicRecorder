@@ -94,7 +94,7 @@ namespace MotronicRecorder
                 Button choose = Field<Button>(form, "choose");
                 Button stop = Field<Button>(form, "stop");
                 SessionController controller = Field<SessionController>(form, "controller");
-                Assert(form.Text == "Motronic Recorder by leitoauto.com · 0.2.4", context + ": window author/version branding is missing");
+                Assert(form.Text == "Motronic Recorder by leitoauto.com · 0.2.5", context + ": window author/version branding is missing");
                 Assert(mode.SelectedIndex == 1, context + ": default source must be Vehicle");
                 Assert(!controller.IsRunning && !stop.Enabled, context + ": constructing/showing the form started work");
 
